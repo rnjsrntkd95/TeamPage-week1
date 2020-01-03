@@ -20,34 +20,49 @@
         }
 
 
-
-        #testimonials #testimonials-title {
-            border: 1px solid black;
-            margin-bottom: 30px;
+        #testimonials {
             text-align: center;
         }
 
+        #testimonials #testimonials-title {
+            margin-bottom: 3%;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
         #testimonials #testimonials-content {
+            display: inline-block;
             border: 1px solid black;
             text-align: center;
+            height: 25vh;
+            width: 55%;
         }
 
         #testimonials #testimonials-content>div {
             display: inline-block;
+            overflow: hidden;
             border: 1px solid black;
-
         }
 
         #testimonials #testimonials-content .d_content-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 100px;
-            margin-right: 30px;
+            width: 20%;
+            height: 100%;
+            border-radius: 50%;
+            margin: 0 3% 0 0;
+            z-index: 999;
+            overflow: hidden;
+
+        }
+
+        #testimonials #testimonials-content .d_content-img .d_img {
+            width: 100%;
+            height: 100%;
         }
 
         #testimonials #testimonials-content .d_content-pr {
-            width: 500px;
-            height: 150px;
+            width: 70%;
+            height: 100%;
         }
 
 
@@ -81,27 +96,31 @@
             display: inline-block;
             text-align: center;
         }
+
         #team #team-pic .pic-wrap {
             display: inline-block;
             text-align: center;
             margin: 1% 2%;
-            width:23%;
-            height:40vh;
+            width: 23%;
+            height: 40vh;
             overflow: hidden;
         }
+
         #team #team-pic .d_pic {
-            height: 40vh;
+            height: 100%;
             width: 100%;
         }
+
         #team #team-pic .d_cover {
             background-color: black;
             text-align: center;
             opacity: 0.3;
             position: relative;
-            top:-11vh;
+            top: -11vh;
             height: 15vh;
             width: 100%;
         }
+
         #team #team-pic .d_pic img {
             position: relative;
             top: 0;
@@ -109,40 +128,43 @@
             width: 100%;
             height: 100%;
         }
+
         #team #team-pic .d_tran .d_name {
-            position:relative;
+            position: relative;
             top: -24vh;
             color: white;
             font-size: 1.1em;
             font-weight: bold;
         }
+
         #team #team-pic .d_name2 {
-            position:relative;
+            position: relative;
             top: -24vh;
             color: white;
             font-size: 0.8em;
         }
+
         #team #team-pic .d_tran {
-            z-index:9999;
             position: relative;
             top: 5%;
         }
-        #team #team-pic .d_tran:hover {
+
+        #team #team-wrap #team-pic .pic-wrap:hover>.d_tran {
             top: -10%;
             transition-duration: 1s;
         }
-        .d_tran .d_sns {
-            position:relative;
-            top: -22vh;
-            width:10%;
-            height:10%;
-            color:white;
 
+        .d_tran .d_sns {
+            position: relative;
+            top: -22vh;
+            width: 10%;
+            height: 10%;
+            color: white;
         }
 
 
 
-        
+
         #pricing {
             text-align: center;
         }
@@ -183,6 +205,7 @@
             overflow: hidden;
         }
 
+
         #pricing #pricing-choose .d_choose .price {
             margin-top: 10%;
         }
@@ -208,28 +231,63 @@
             margin: 10% 0;
             padding: 3%;
         }
+
+        #pricing #pricing-choose .d_choose .topline {
+            height: 7px;
+            background-color: #168aaa;
+            position: relative;
+            top: -100%;
+            left: -100%;
+            display: none;
+        }
+
         .digit {
             font-size: 1.2em;
             position: relative;
             top: -0.8em;
         }
+
         .salary {
             font-size: 2.5em;
             font-weight: bold;
         }
 
+        #pricing #pricing-choose .d_choose .payment:hover {
+            background-color: #168aaa;
+        }
 
+        #pricing #pricing-wrap #pricing-choose .d_choose:hover {
+            transition-duration: 1s;
+            transform: scale(1.1);
+            box-shadow: 5px 5px 5px 5px #afafaf;
+        }
+
+        #pricing #pricing-wrap #pricing-choose .d_choose:hover>.topline {
+            display: block;
+            animation-name: location;
+            animation-duration: 1s;
+        }
+
+        @keyframes location {
+            from {}
+
+            to {
+                left: 0;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <div id="testimonials" class="testimonials">
-        <div id="testimonials-title">Testimonials-title</div>
+        <div id="testimonials-title">Testimonials</div>
         <div id="testimonials-content">
-            <div class="d_content-img">img</div>
+            <div class="d_content-img"><img class="d_img" src="img/team1.jpg"></div>
             <div class="d_content-pr">Public Relation</div>
         </div>
+
+
     </div>
 
 
@@ -246,9 +304,10 @@
                         <div class="d_cover"></div>
                         <div class="d_name">권 구 상</div>
                         <div class="d_name2">Kyonggi University</div>
-                        <a href="https://github.com/rnjsrntkd95" target="_blank"><img class="d_sns" src="img/github-.png"></a>
+                        <a href="https://github.com/rnjsrntkd95" target="_blank"><img class="d_sns"
+                                src="img/github-.png"></a>
                         <a href="" target=""><img class="d_sns" src="img/instagram-.png"></a>
-                </div>
+                    </div>
                 </div>
                 <div class="pic-wrap">
                     <div class="d_pic"><img src="img/team2.jpg" alt="김성익"></div>
@@ -256,7 +315,8 @@
                         <div class="d_cover"></div>
                         <div class="d_name">김 성 익</div>
                         <div class="d_name2">Hanyang University</div>
-                        <a href="https://github.com/kpic5014" target="_blank"><img class="d_sns" src="img/github-.png"></a>
+                        <a href="https://github.com/kpic5014" target="_blank"><img class="d_sns"
+                                src="img/github-.png"></a>
                         <a href="" target=""><img class="d_sns" src="img/instagram-.png"></a>
                     </div>
                 </div>
@@ -266,7 +326,8 @@
                         <div class="d_cover"></div>
                         <div class="d_name">김 대 환</div>
                         <div class="d_name2">Ulsan University</div>
-                        <a href="https://github.com/ghbmystle" target="_blank"><img class="d_sns" src="img/github-.png"></a>
+                        <a href="https://github.com/ghbmystle" target="_blank"><img class="d_sns"
+                                src="img/github-.png"></a>
                         <a href="" target=""><img class="d_sns" src="img/instagram-.png"></a>
                     </div>
                 </div>
@@ -276,7 +337,8 @@
                         <div class="d_cover"></div>
                         <div class="d_name">남 창 우</div>
                         <div class="d_name2">Seoul University</div>
-                        <a href="https://github.com/vandlaw7" target="_blank"><img class="d_sns" src="img/github-.png"></a>
+                        <a href="https://github.com/vandlaw7" target="_blank"><img class="d_sns"
+                                src="img/github-.png"></a>
                         <a href="" target=""><img class="d_sns" src="img/instagram-.png"></a>
                     </div>
                 </div>
@@ -286,7 +348,8 @@
                         <div class="d_cover"></div>
                         <div class="d_name">최 수 현</div>
                         <div class="d_name2">Seoul University</div>
-                        <a href="https://github.com/Soohyun-CHOI" target="_blank"><img class="d_sns" src="img/github-.png"></a>
+                        <a href="https://github.com/Soohyun-CHOI" target="_blank"><img class="d_sns"
+                                src="img/github-.png"></a>
                         <a href="" target=""><img class="d_sns" src="img/instagram-.png"></a>
                     </div>
                 </div>
@@ -317,7 +380,10 @@
                     <div class="explain">개발팀의 얼굴에 여유가 가득합니다.</div>
                     <div class="explain">기한을 조금 넘길 수 있습니다.</div>
                     <div class="explain">50% 확률로 개발원이 사라질 수 있습니다.</div>
-                    <div class="payment">CHOOSE PLAN</div>
+                    <a href="" target="">
+                        <div class="payment">CHOOSE PLAN</div>
+                    </a>
+                    <div class="topline"></div>
                 </div>
                 <div class="d_choose">
                     <div class="price">
@@ -325,10 +391,13 @@
                             class="term">/month</span>
                     </div>
                     <div class="tier">Gold Plan</div>
-                    <div class="explain">개발팀의 얼굴에 여유가 가득합니다.</div>
+                    <div class="explain">개발팀이 열심히 하는 척 합니다.</div>
                     <div class="explain">기한에 맞게 제출합니다.</div>
                     <div class="explain">중간중간 농땡이를 부립니다.</div>
-                    <div class="payment">CHOOSE PLAN</div>
+                    <a href="" target="">
+                        <div class="payment">CHOOSE PLAN</div>
+                    </a>
+                    <div class="topline"></div>
                 </div>
                 <div class="d_choose">
                     <div class="price">
@@ -339,7 +408,10 @@
                     <div class="explain">당신의 노예가 되겠습니다.</div>
                     <div class="explain">10일 전에 마무리하여 피드백을 요청합니다.</div>
                     <div class="explain">인생을 바치겠습니다.</div>
-                    <div class="payment">CHOOSE PLAN</div>
+                    <a href="" target="">
+                        <div class="payment">CHOOSE PLAN</div>
+                    </a>
+                    <div class="topline"></div>
                 </div>
             </div>
         </div>
