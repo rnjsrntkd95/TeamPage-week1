@@ -8,136 +8,340 @@
         * {
             margin: 0;
             padding: 0;
-            text-align: center;
         }
-        body > div {
-            border-bottom:1px solid #646464;
-            padding:50px 0;
+
+        body>div {
+            border-bottom: 1px solid #646464;
+            padding: 50px 0;
         }
-        body > div:nth-child(even) {
+
+        body>div:nth-child(even) {
             background-color: rgb(245, 248, 253);
         }
 
 
 
-        #testimonials #title {
-            border:1px solid black;
+        #testimonials #testimonials-title {
+            border: 1px solid black;
             margin-bottom: 30px;
+            text-align: center;
         }
-        #testimonials #content {
-            border:1px solid black;
+
+        #testimonials #testimonials-content {
+            border: 1px solid black;
+            text-align: center;
         }
-        #testimonials #content > div {
+
+        #testimonials #testimonials-content>div {
             display: inline-block;
             border: 1px solid black;
 
         }
-        #testimonials #content #content-img {
-            width:150px;
+
+        #testimonials #testimonials-content .d_content-img {
+            width: 150px;
             height: 150px;
             border-radius: 100px;
             margin-right: 30px;
         }
-        #testimonials #content #content-pr {
-            width:500px;
+
+        #testimonials #testimonials-content .d_content-pr {
+            width: 500px;
             height: 150px;
         }
 
 
 
 
+        #team {
+            text-align: center;
+        }
 
-        #team #team-intro .title {
-            border:1px solid black;
-            margin-bottom:10px;
+        #team-wrap {
+            width: 80%;
+            display: inline-block;
         }
-        #team #team-intro .content {
-            border:1px solid black;
-            margin-bottom:30px;
+
+        #team #team-intro .d_title {
+            margin-bottom: 1%;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
         }
+
+        #team #team-intro .d_content {
+            margin-bottom: 3%;
+            text-align: center;
+            color: #686363;
+            font-size: 0.9em;
+        }
+
         #team #team-pic {
-            border:1px solid black;
             overflow: hidden;
+            display: inline-block;
+            text-align: center;
+        }
+        #team #team-pic .pic-wrap {
+            display: inline-block;
+            text-align: center;
+            margin: 1% 2%;
+            width:23%;
+            height:40vh;
+            overflow: hidden;
+        }
+        #team #team-pic .d_pic {
+            height: 40vh;
             width: 100%;
         }
-        #team #team-pic > div {
-            height:250px;
-            width:250px;
-            margin:0 20px;
-            border:1px solid #757575;
-            display:inline-block;
+        #team #team-pic .d_cover {
+            background-color: black;
+            text-align: center;
+            opacity: 0.3;
+            position: relative;
+            top:-11vh;
+            height: 15vh;
+            width: 100%;
+        }
+        #team #team-pic .d_pic img {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #team #team-pic .d_tran .d_name {
+            position:relative;
+            top: -24vh;
+            color: white;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        #team #team-pic .d_name2 {
+            position:relative;
+            top: -24vh;
+            color: white;
+            font-size: 0.8em;
+        }
+        #team #team-pic .d_tran {
+            z-index:9999;
+            position: relative;
+            top: 5%;
+        }
+        #team #team-pic .d_tran:hover {
+            top: -10%;
+            transition-duration: 1s;
+        }
+        .d_tran .d_sns {
+            position:relative;
+            top: -22vh;
+            width:10%;
+            height:10%;
+            color:white;
+
         }
 
 
 
-        #pricing #pricing-intro .title {
-            border:1px solid black;
-            margin-bottom:10px;
+        
+        #pricing {
+            text-align: center;
         }
-        #pricing #pricing-intro .content {
-            border:1px solid black;
-            margin-bottom:30px;
+
+        #pricing-wrap {
+            width: 80%;
+            display: inline-block;
         }
+
+        #pricing #pricing-intro .d_title {
+            margin-bottom: 1%;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        #pricing #pricing-intro .d_content {
+            margin-bottom: 3%;
+            text-align: center;
+            color: #686363;
+            font-size: 0.9em;
+        }
+
         #pricing #pricing-choose {
-            border:1px solid black;
-            overflow: hidden;
+            display: inline-block;
+            height: 50vh;
             width: 100%;
         }
-        #pricing #pricing-choose > div {
-            height:250px;
-            width:250px;
-            margin:0 20px;
-            border:1px solid #757575;
-            display:inline-block;
-        }
-        
-        
 
-        
+        #pricing #pricing-choose .d_choose {
+            width: 26%;
+            height: 100%;
+            margin: 0 1%;
+            display: inline-block;
+            text-align: center;
+            background-color: #ffffff;
+            border-bottom: 4px solid #c0c0c0;
+            overflow: hidden;
+        }
+
+        #pricing #pricing-choose .d_choose .price {
+            margin-top: 10%;
+        }
+
+        #pricing #pricing-choose .d_choose .tier {
+            font-size: 1.7em;
+            padding: 0.7em;
+        }
+
+        #pricing #pricing-choose .d_choose .explain {
+            font-size: 0.8em;
+            padding: 0.5em 0;
+
+        }
+
+        #pricing #pricing-choose .d_choose .payment {
+            display: inline-block;
+            background-color: #1bb1dc;
+            width: 40%;
+            font-size: 1.0em;
+            color: #ffffff;
+            border-radius: 5px;
+            margin: 10% 0;
+            padding: 3%;
+        }
+        .digit {
+            font-size: 1.2em;
+            position: relative;
+            top: -0.8em;
+        }
+        .salary {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+
     </style>
 </head>
 
 <body>
 
-    <div id="testimonials">
-        <div id="title">Testimonials-title</div>
-        <div id="content">
-            <div id="content-img">img</div>
-            <div id="content-pr">Public Relation</div>
+    <div id="testimonials" class="testimonials">
+        <div id="testimonials-title">Testimonials-title</div>
+        <div id="testimonials-content">
+            <div class="d_content-img">img</div>
+            <div class="d_content-pr">Public Relation</div>
         </div>
     </div>
 
 
-    <div id="team">
-        <div id="team-intro">
-            <div class="title">Team</div>
-            <div class="content">We are p'rogramming!</div>
-        </div>
-        <div id="team-pic">
-            <div class="pic-1">pic 1</div>
-            <div class="pic-2">pic 2</div>
-            <div class="pic-3">pic 3</div>
-            <div class="pic-4">pic 4</div>
-            <div class="pic-5">pic 5</div>
+    <div id="team" class="team">
+        <div id="team-wrap">
+            <div id="team-intro">
+                <div class="d_title">Team</div>
+                <div class="d_content">피로그래밍 12기<br /> 첫째주 팀프로젝트 팀원을 소개합니다.</div>
+            </div>
+            <div id="team-pic">
+                <div class="pic-wrap">
+                    <div class="d_pic"><img src="img/team1.jpg" alt="권구상"></div>
+                    <div class="d_tran">
+                        <div class="d_cover"></div>
+                        <div class="d_name">권 구 상</div>
+                        <div class="d_name2">Kyonggi University</div>
+                        <a href="https://github.com/rnjsrntkd95" target="_blank"><img class="d_sns" src="img/github-.png"></a>
+                        <a href="" target=""><img class="d_sns" src="img/instagram-.png"></a>
+                </div>
+                </div>
+                <div class="pic-wrap">
+                    <div class="d_pic"><img src="img/team2.jpg" alt="김성익"></div>
+                    <div class="d_tran">
+                        <div class="d_cover"></div>
+                        <div class="d_name">김 성 익</div>
+                        <div class="d_name2">Hanyang University</div>
+                        <a href="https://github.com/kpic5014" target="_blank"><img class="d_sns" src="img/github-.png"></a>
+                        <a href="" target=""><img class="d_sns" src="img/instagram-.png"></a>
+                    </div>
+                </div>
+                <div class="pic-wrap">
+                    <div class="d_pic"><img src="img/team3.jpg" alt="김대환"></div>
+                    <div class="d_tran">
+                        <div class="d_cover"></div>
+                        <div class="d_name">김 대 환</div>
+                        <div class="d_name2">Ulsan University</div>
+                        <a href="https://github.com/ghbmystle" target="_blank"><img class="d_sns" src="img/github-.png"></a>
+                        <a href="" target=""><img class="d_sns" src="img/instagram-.png"></a>
+                    </div>
+                </div>
+                <div class="pic-wrap">
+                    <div class="d_pic"><img src="img/team4.jpg" alt="남창우"></div>
+                    <div class="d_tran">
+                        <div class="d_cover"></div>
+                        <div class="d_name">남 창 우</div>
+                        <div class="d_name2">Seoul University</div>
+                        <a href="https://github.com/vandlaw7" target="_blank"><img class="d_sns" src="img/github-.png"></a>
+                        <a href="" target=""><img class="d_sns" src="img/instagram-.png"></a>
+                    </div>
+                </div>
+                <div class="pic-wrap">
+                    <div class="d_pic"><img src="img/team5.jpg" alt="최수현"></div>
+                    <div class="d_tran">
+                        <div class="d_cover"></div>
+                        <div class="d_name">최 수 현</div>
+                        <div class="d_name2">Seoul University</div>
+                        <a href="https://github.com/Soohyun-CHOI" target="_blank"><img class="d_sns" src="img/github-.png"></a>
+                        <a href="" target=""><img class="d_sns" src="img/instagram-.png"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 
-    <div id="clients">
+    <div id="clients" class="clients">
         <div id="clients-title">clients-title</div>
         <div id="clients-img">clients-img</div>
     </div>
 
-    
-    <div id="pricing">
-        <div id="pricing-intro">
-            <div class="title">Pricing</div>
-            <div class="content">We are expensive!</div>
-        </div>
-        <div id="pricing-choose">
-            <div class="choose-1">choose 1</div>
-            <div class="choose-2">choose 2</div>
-            <div class="choose-3">choose 3</div>
+
+    <div id="pricing" class="pricing">
+        <div id="pricing-wrap">
+            <div id="pricing-intro">
+                <div class="d_title">Pricing</div>
+                <div class="d_content">등급별 업무강도와 요금을 확인하여 선택하세요.</div>
+            </div>
+            <div id="pricing-choose">
+                <div class="d_choose">
+                    <div class="price">
+                        <span class="digit">₩</span><span class="salary">10,000,000</span><span
+                            class="term">/month</span>
+                    </div>
+                    <div class="tier">Bronze Plan</div>
+                    <div class="explain">개발팀의 얼굴에 여유가 가득합니다.</div>
+                    <div class="explain">기한을 조금 넘길 수 있습니다.</div>
+                    <div class="explain">50% 확률로 개발원이 사라질 수 있습니다.</div>
+                    <div class="payment">CHOOSE PLAN</div>
+                </div>
+                <div class="d_choose">
+                    <div class="price">
+                        <span class="digit">₩</span><span class="salary">50,000,000</span><span
+                            class="term">/month</span>
+                    </div>
+                    <div class="tier">Gold Plan</div>
+                    <div class="explain">개발팀의 얼굴에 여유가 가득합니다.</div>
+                    <div class="explain">기한에 맞게 제출합니다.</div>
+                    <div class="explain">중간중간 농땡이를 부립니다.</div>
+                    <div class="payment">CHOOSE PLAN</div>
+                </div>
+                <div class="d_choose">
+                    <div class="price">
+                        <span class="digit">₩</span><span class="salary">100,000,000</span><span
+                            class="term">/month</span>
+                    </div>
+                    <div class="tier">Platinum Plan</div>
+                    <div class="explain">당신의 노예가 되겠습니다.</div>
+                    <div class="explain">10일 전에 마무리하여 피드백을 요청합니다.</div>
+                    <div class="explain">인생을 바치겠습니다.</div>
+                    <div class="payment">CHOOSE PLAN</div>
+                </div>
+            </div>
         </div>
     </div>
 
